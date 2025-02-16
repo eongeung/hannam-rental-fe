@@ -1,0 +1,26 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.Header > div {
+    display: flex;
+    padding: 0px 10px;
+    filter: brightness(0) invert(1);
+}
+
+.Header > div > div{
+    padding: 0px 15px;
+}
+
+.logIn .menu{
+    margin-left: auto;
+}
+
+.logo {
+    width: 40px;
+    margin: 10px;
+}
