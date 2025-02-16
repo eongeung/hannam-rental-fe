@@ -1,0 +1,27 @@
+.Main {
+    display: flex;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.title {
+    font-size: 70px;
+    padding: 40px;
+    text-align: center;
+}
+
+.mainlogIn {
+    width: 40%;
+    background-color: brown;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: medium;
+    color: white;
+}
+
+.Main .map{
+    width: 70%;
+    height: 87vh;
+}
