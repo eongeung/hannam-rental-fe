@@ -3,6 +3,7 @@ import './App.css'
 import Login from './component/Login'
 import Main from './component/Main'
 import Mypage from './component/Mypage'
+import SignUp from './component/Signup'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path = '/' element = {<Main/>} />
         <Route path = '/login' element = {<Login/>} />
+        <Route path='/signup' element = {<SignUp/>} />
         <Route path = '/mypage' element = {<Mypage/>} />
       </Routes>
     </div>
