@@ -1,5 +1,10 @@
+import './Signup.css';
+import Header from'./Header';
+
 const SignUp = () => {
   return (
+    <div>
+      <Header />
     <div className="page">
       <div className="titleWrap">회원가입</div>
 
@@ -26,6 +31,7 @@ const SignUp = () => {
 
         <button className="bottomButton">회원가입</button>
       </div>
+    </div>
     </div>
   );
 };

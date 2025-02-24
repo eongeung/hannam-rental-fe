@@ -1,7 +1,10 @@
-import './login.css';
+import './Login.css';
+import Header from'./Header';
 
 const Login = () => {
   return (
+  <div>
+    <Header />
   <div className="page">
     <div className="titleWrap">
       로그인
@@ -32,6 +35,7 @@ const Login = () => {
       </div>
     </div>
 
+  </div>
   </div>
   );
 }
