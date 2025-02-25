@@ -5,6 +5,7 @@ import Main from './component/Main'
 import Mypage from './component/Mypage'
 import SignUp from './component/Signup'
 import RentalPage from './component/RentalPage'
+import CollegeSelect from './component/CollegeSelect'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/signup' element = {<SignUp/>} />
         <Route path = '/mypage' element = {<Mypage/>} />
         <Route path = '/rental' element = {<RentalPage/>} />
+        <Route path = '/college' element = {<CollegeSelect/>} />
       </Routes>
     </div>
   )
