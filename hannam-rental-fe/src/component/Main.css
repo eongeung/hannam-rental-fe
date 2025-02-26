@@ -9,7 +9,7 @@
     margin: 0;
 }
 
-.mainlogIn {
+.Button_mainlogIn {
     width: 40%;
     background-color: brown;
     margin:auto;
@@ -23,5 +23,9 @@
 
 .home{
     background-image : url("../assets/hannamUniversity.jpg");
-    background-size: 100% 100%;
+    background-size: 100% 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

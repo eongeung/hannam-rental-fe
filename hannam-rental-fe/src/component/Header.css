@@ -9,18 +9,31 @@
 .Header > div {
     display: flex;
     padding: 0px 10px;
+}
+
+.Button_logo > img {
     filter: brightness(0) invert(1);
+    width: 38px;
+    height: 38px;
 }
 
 .Header > div > div{
     padding: 0px 15px;
 }
 
-.logIn .menu{
+.menu{
     margin-left: auto;
+    cursor: pointer;
+    color: white;
 }
 
-.logo {
+.Button_logo {
     width: 40px;
     margin: 10px;
+}
+
+.Button_headerLogIn{
+    background-color: brown;
+    border: none;
+    color: white;
 }
