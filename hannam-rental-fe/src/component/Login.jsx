@@ -1,7 +1,10 @@
 import './Login.css';
 import Header from'./Header';
+import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const nav = useNavigate();
   return (
   <div>
     <Header />
@@ -29,9 +32,19 @@ const Login = () => {
         영문, 숫자, 특수문자 포함 8자 이상 입력해주세요.
       </div>
 
-      <div style={{display:"flex", gap: "10px"}}>
-        <button className="bottomButton">로그인</button>
-        <button className="bottomButton">회원가입</button>
+      <div className='bottomButton'>
+        <Button
+        className="bottomLogIn"
+        onClick={()=> nav(`/college`)}
+        text={"로그인"}
+        />
+
+        <Button
+        className="bottomSignup"
+        onClick={()=> nav(`/signup`)}
+        text={"회원가입"}
+        />
+
       </div>
     </div>
 

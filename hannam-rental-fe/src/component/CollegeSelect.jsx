@@ -9,6 +9,6 @@ const CollegeSelect = () => {
         <img className="hannamUniversity" src={hannamUniversity} alt="" />
     </div>
     )
-}
+}   
 
 export default CollegeSelect;
