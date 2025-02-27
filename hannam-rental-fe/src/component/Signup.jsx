@@ -1,4 +1,4 @@
-import './Signup.css';
+import './Membership.css';
 import Header from'./Header';
 
 const SignUp = () => {
