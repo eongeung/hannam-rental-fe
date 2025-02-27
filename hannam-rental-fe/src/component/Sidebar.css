@@ -1,0 +1,16 @@
+.menuOption > option{
+    border-bottom: 1px solid rgb(226, 226, 226);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menuOption{
+    padding: 0px;
+    margin-top: 40px;
+}
+
+.sideBar{
+    padding: 30px;
+    width: 250px;
+    float: right;
+}

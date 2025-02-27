@@ -6,6 +6,7 @@ import Mypage from './component/Mypage'
 import SignUp from './component/Signup'
 import RentalPage from './component/RentalPage'
 import CollegeSelect from './component/CollegeSelect'
+import Sidebar from './component/Sidebar'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path = '/mypage' element = {<Mypage/>} />
         <Route path = '/rental' element = {<RentalPage/>} />
         <Route path = '/college' element = {<CollegeSelect/>} />
+        <Route path = '/sidebar' element = {<Sidebar/>} />
       </Routes>
     </div>
   )
