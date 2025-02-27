@@ -1,13 +1,17 @@
 import Header from "./Header";
 import umbrella from "../assets/umbrella.jpg"
 import "./RentalPage.css"
+import { useLocation } from "react-router-dom";
 
 const RentalPage = () => {
+    const location = useLocation();
+    const { text } = location.state || {};
+    
     return(
         <div className="RentalPage">
             <Header/>
             <div className="college">
-                <h1>스마트융합대학</h1>
+                <h1>{text}</h1>
             </div>
             
             <div className="productList">
