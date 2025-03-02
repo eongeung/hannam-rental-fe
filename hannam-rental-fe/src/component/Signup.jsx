@@ -1,7 +1,11 @@
 import './Membership.css';
 import Header from'./Header';
+import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
+  const nav = useNavigate();
+
   return (
     <div>
       <Header />
@@ -29,7 +33,11 @@ const SignUp = () => {
           <input type="text" placeholder="-을 제외한 전화번호를 입력하세요." />
         </div>
 
-        <button className="bottomButton">회원가입</button>
+        <Button
+        className="signUpComplete"
+        onClick={()=> nav(`/login`)}
+        text={"회원가입"}
+        />
       </div>
     </div>
     </div>
