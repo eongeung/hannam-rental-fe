@@ -1,5 +1,8 @@
 .RentalPage{
     background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
 }
 
 .productList{
