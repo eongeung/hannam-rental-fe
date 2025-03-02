@@ -1,6 +1,7 @@
 import './Mypage.css';
 import Header from "./Header"
 import user from "../assets/user.jpg"
+import umbrella from "../assets/umbrella.jpg"
 
 const Mypage  = () => {
     return(
@@ -10,13 +11,15 @@ const Mypage  = () => {
                 <img className ="userImage" src={user}/>
                 <h4 className='name'>이름</h4>
             </div>
-            <div className='menu'>
+            <div className='sideBarMenu'>
                 대여목록
                 <div className='rentalList'>
-                    사진<br/>
-                    제품명<br/>
-                    대여일<br/>
-                    반납일<br/>
+                    <img className ="rentalImage" src={umbrella}/>
+                    <div className='rentalInfo'>
+                    <p>제품명: </p>
+                    <p>대여일: </p>
+                    <p>반납일: </p>
+                    </div>
                 </div>
             </div>
         </div>
