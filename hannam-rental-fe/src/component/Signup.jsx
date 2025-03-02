@@ -34,7 +34,7 @@ const SignUp = () => {
         </div>
 
         <Button
-        className="signUpComplete"
+        className="bottomSignup"
         onClick={()=> nav(`/login`)}
         text={"회원가입"}
         />
