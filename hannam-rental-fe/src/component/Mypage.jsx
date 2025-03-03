@@ -2,15 +2,11 @@ import './Mypage.css';
 import Header from "./Header"
 import user from "../assets/user.jpg"
 import umbrella from "../assets/umbrella.jpg"
+import {RentalDates} from "../utill/date"
 
 const Mypage  = () => {
-    const today = new Date();
-    const rentalDate = `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일`;
+    const { rentalDate, returnDate } = RentalDates();
     
-    const returnDay = new Date(today);
-    returnDay.setDate(today.getDate() + 4);
-    const returnDate = `${returnDay.getFullYear()}년 ${returnDay.getMonth() + 1}월 ${returnDay.getDate()}일`;
-
     return(
         <div className="mypage">
             <Header/>
