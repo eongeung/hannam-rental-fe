@@ -2,8 +2,12 @@ import Header from "./Header";
 import umbrella from "../assets/umbrella.jpg"
 import "./RentalPage.css"
 import { useLocation, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const RentalPage = () => {
+    const params = useParams();
+    console.log(params);
+
     const nav = useNavigate();
     const location = useLocation();
     const { text } = location.state || {};
@@ -12,7 +16,7 @@ const RentalPage = () => {
         <div className="RentalPage">
             <Header/>
             <div className="college">
-                <h1>{text}</h1>
+                <h1>{params.id} {text}</h1>
             </div>
             
             <div
