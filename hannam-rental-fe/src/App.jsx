@@ -8,35 +8,66 @@ import RentalPage from './component/RentalPage'
 import CollegeSelect from './component/CollegeSelect'
 import Sidebar from './component/Sidebar'
 import RentalApplication from './component/RentalApplication'
-import { useReducer } from 'react'
+import { useReducer, useRef } from 'react'
+import Button from './component/Button'
 
 const mockData = [
   {
-    RentalId: 1,
+    rentalNumber: 1,
     createdDate : new Date("2025-03-01").getTime(),
-    productId: 1,
+    productNumber: 1,
     rentalSpace: "스마트융합대학",
   },
   {
-    RentalId: 2,
+    rentalNumber: 2,
     createdDate : new Date("2025-03-02").getTime(),
-    productId: 1,
+    productNumber: 1,
     rentalSpace: "공과대학",
   },
   {
-    RentalId: 3,
+    rentalNumber: 3,
     createdDate : new Date("2025-03-03").getTime(),
-    productId: 2,
+    productNumber: 2,
     rentalSpace: "경상대학",
   },
 ]
 
 function reducer(state, action){
-  return state;
+  switch(action.type){
+    case 'RENTAL': return [action.data, ...state];
+    case 'RETRIEVE':
+      return state.filter(
+        (item) => String(item.rentalNumber) !== String(action.rentalNumber)
+      );
+    default:
+      return state;
+  }
 }
 
 function App() {
   const [data, dispatch] = useReducer(reducer, mockData);
+  const idRef = useRef(4)
+
+  const onRental = (rentalNumber, createDate, productNumber, rentalSpace) =>{
+    // 대여를 추가
+    dispatch({
+      type: "RENTAL",
+      data : {
+        rentalNumber: idRef.current++,
+        createDate,
+        productNumber,
+        rentalSpace,
+      },
+    })
+  }
+
+  const onReturn = (rentalNumber) =>{
+    dispatch({
+      type: "RETRIEVE",
+      rentalNumber,
+    })
+
+  }
 
   return (
     <div className='App'>
