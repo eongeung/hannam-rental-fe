@@ -2,8 +2,11 @@ import './Mypage.css';
 import Header from "./Header"
 import user from "../assets/user.jpg"
 import umbrella from "../assets/umbrella.jpg"
+import {RentalDates} from "../utill/date"
 
 const Mypage  = () => {
+    const { rentalDate, returnDate } = RentalDates();
+    
     return(
         <div className="mypage">
             <Header/>
@@ -16,14 +19,16 @@ const Mypage  = () => {
                 <div className='rentalList'>
                     <img className ="rentalImage" src={umbrella}/>
                     <div className='rentalInfo'>
-                    <p>제품명: </p>
-                    <p>대여일: </p>
-                    <p>반납일: </p>
+                    <p>제품명: 우산 </p>
+                    <p>대여일: {rentalDate} </p>
+                    <p>반납일: {returnDate} </p>
+                    <p>대여학과: </p>
                     </div>
                 </div>
             </div>
         </div>
     )
 }
+
 
 export default Mypage;
