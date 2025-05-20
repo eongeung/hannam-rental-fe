@@ -1,16 +1,20 @@
 # ☔ Hannam Rental – 학교 물품 대여 서비스
 
-> 비 오는 날, 학교에서 우산이 필요할 땐?  
-> **Hannam Rental**에서 간편하게 빌려가세요! 🌧
+> **Hannam Rental**은 한남대학교 재학생들을 위한 **학교 물품 대여 플랫폼**입니다.  
+> 비 오는 날 우산이 필요할 때, 간편하게 학교에서 물품을 대여하고 반납할 수 있도록  
+> 만든 스마트한 서비스입니다. 🌂
+
+---
 
 ## 👨‍💻 Team Members
 
 | 이름   | 역할 | GitHub 프로필 |
 |--------|------|----------------|
-| 박현준 | FE   | [@woshipubao](https://github.com/woshipubao) |
 | 서유미 | FE   | [@seoyoomi](https://github.com/seoyoomi) |
 | 장준태 | BE   | [@jangjuntae](https://github.com/jangjuntae) |
 | 이영흔 | BE   | [@eongeung](https://github.com/eongeung) |
+
+---
 
 ## 🔧 Tech Stack
 
@@ -21,10 +25,14 @@
 - Documentation: Notion
 - Containerization: Docker
 
+---
+
 ## 📁 Repository
 
 - Frontend: [hannam-rental-fe](https://github.com/cmd-projects-2025/hannam-rental-fe.git)
 - Backend: [hannam-rental-be](https://github.com/cmd-projects-2025/hannam-rental-be.git)
+
+---
 
 ## 📄 Documentation
 
